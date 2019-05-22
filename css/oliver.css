@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1{
+	
+	margin-top: 100px;
+	width: 500px;
+	height: 500px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px -0px rgba(0,0,0,0.5);
+}
+
+input[type="text"]{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	border-color: black;
+
+}
+
+
+div.toggle{
+    width: 50%;
+    height:300px;
+    margin: auto;
+    text-align: center;	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h5[id="Monto"]{
+	margin-left: 80px;
+	margin-bottom: -20px;
+	 width: 50%;
+    height:20px;
+}
+label[for="boton"]{
+	margin-top: 0px;
+	border-radius:13px; 
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	background-color: dodgerblue;
+	width: 60px;
+	height: 25px;
+	transition: all 400ms;
+
+	box-shadow:inset 0px 0px 6px -0px rgba(0,0,0,0.7); 
+
+	
+}
+
+label[for="boton"]:before{
+	content: '';
+	width: 25px;
+	height: 25px;
+	background-color: black;
+	border-radius:50px; 
+	display: block;
+	 transform: translate(calc(60px - 25px),0px);
+
+	 transition: all 300ms;
+
+}
+
+
+input[type="checkbox"]{
+	display: none;
+}
+
+
+
+input[type="checkbox"]:checked ~ label:before{
+	transform: translate(0px,0px);
+}
+
+input[type="checkbox"]:checked ~ label{
+	background-color: white;
+    
+
+}
